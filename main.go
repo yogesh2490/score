@@ -1,11 +1,12 @@
 package main
 
 import (
- "fmt"
- "score/db"
- )
+  "fmt"
+  "score/db"
+)
 
 func main() {
-	fmt.Println("I am here")
-	
+	manager := db.DbManager()
+	defer manager.Close()
+	fmt.Println("db connection ", manager)
 }
