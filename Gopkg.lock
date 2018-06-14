@@ -2,32 +2,20 @@
 
 
 [[projects]]
-  name = "github.com/go-sql-driver/mysql"
+  name = "github.com/gorilla/context"
   packages = ["."]
-  revision = "d523deb1b23d913de5bdada721a6071e71283618"
-  version = "v1.4.0"
+  revision = "08b5f424b9271eedf6f9f0ce86cb9396ed337a42"
+  version = "v1.1.1"
 
 [[projects]]
-  name = "github.com/jinzhu/gorm"
+  name = "github.com/gorilla/mux"
   packages = ["."]
-  revision = "6ed508ec6a4ecb3531899a69cbc746ccf65a4166"
-  version = "v1.9.1"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/jinzhu/inflection"
-  packages = ["."]
-  revision = "04140366298a54a039076d798123ffa108fff46c"
-
-[[projects]]
-  name = "google.golang.org/appengine"
-  packages = ["cloudsql"]
-  revision = "150dc57a1b433e64154302bdc40b6bb8aefa313a"
-  version = "v1.0.0"
+  revision = "e3702bed27f0d39777b0b37b664b6280e8ef8fbf"
+  version = "v1.6.2"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "4fc62703875f83aa79c90597812092308331cbf2a823460f1cebc11bc138f208"
+  inputs-digest = "710acbeff1e035c63e93b534fee8114af6b54616b1b0f926f0da85a0fceea502"
   solver-name = "gps-cdcl"
   solver-version = 1

@@ -1,12 +1,16 @@
 package main
 
 import (
-  "fmt"
-  "score/db"
+	"log"
+	"net/http"
+	"score/common"
+	sr "score/router"
 )
 
 func main() {
-	manager := db.DbManager()
-	defer manager.Close()
-	fmt.Println("db connection ", manager)
+	//db connection
+	healthController := common.GetHealthController()
+
+	router := sr.NewRouter(healthController)
+	log.Fatal(http.ListenAndServe(":8081", router))
 }
